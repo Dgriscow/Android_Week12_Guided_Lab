@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00E60808"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/userNameEntry"
+        android:layout_width="261dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:focusedByDefault="true"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="107dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/password"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/passwordEntry"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/passwordEntry" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="88dp"
+        android:layout_height="34dp"
+        android:text="@string/loginText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/userNameEntry"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <EditText
+        android:id="@+id/passwordEntry"
+        android:layout_width="242dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="584dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/goLogin"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#C51010"
+        android:text="@string/loginText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEntry"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="319dp"
+        android:layout_height="302dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goLogin"
+        app:srcCompat="@drawable/goofycc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
