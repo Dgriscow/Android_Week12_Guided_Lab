@@ -1,5 +1,6 @@
 package com.example.android_week12_guided_lab
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -43,6 +44,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 else ->{
                     Toast.makeText(applicationContext, "Success!", Toast.LENGTH_LONG).show()
+                    //goto next screen
+                    val nextSRC = Intent(this@MainActivity, SecondView::class.java)
+                    startActivity(nextSRC)
 
                 }
             }
@@ -53,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
     fun check_login(username:String, password:String):LoginState{
         val adminLogin = "DevinTAG"
-        val adminPassword = "10112002"
+        val adminPassword = "0000"
 
 
         return if (username != adminLogin){
@@ -63,6 +67,8 @@ class MainActivity : AppCompatActivity() {
         }else{
             LoginState.success
         }
+
+
 
     }
 }

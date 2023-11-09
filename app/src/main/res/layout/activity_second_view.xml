@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondView">
+
+    <EditText
+        android:id="@+id/lnEntry"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="@string/ln"
+        android:inputType="text"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fnEntry"
+        app:layout_constraintTop_toTopOf="@+id/fnEntry" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="3dp"
+        android:hint="@string/ln"
+        android:text="@string/fn"
+        app:layout_constraintEnd_toEndOf="@+id/lnEntry"
+        app:layout_constraintTop_toBottomOf="@+id/lnEntry" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:text="@string/fn"
+        app:layout_constraintStart_toStartOf="@+id/fnEntry"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pnEntry"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="133dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/dayEntry"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/lnEntry" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:gravity="center"
+        android:text="@string/phone"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pnEntry"
+        app:layout_constraintEnd_toEndOf="@+id/monthSpin"
+        app:layout_constraintStart_toStartOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/fnEntry"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/fn"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/lnEntry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/monthSpin"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="316dp"
+        android:entries="@array/months"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dayEntry"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/fnEntry" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:text="@string/dob"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/monthSpin"
+        app:layout_constraintEnd_toStartOf="@+id/monthSpin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/dayEntry"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="@string/day"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/monthSpin"
+        app:layout_constraintEnd_toStartOf="@+id/yearEntry"
+        app:layout_constraintStart_toEndOf="@+id/monthSpin" />
+
+    <EditText
+        android:id="@+id/yearEntry"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="@string/year"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/dayEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dayEntry"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <Switch
+        android:id="@+id/lifeSwitch"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degText" />
+
+    <TextView
+        android:id="@+id/certText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/cert"
+        app:layout_constraintBottom_toTopOf="@+id/lifeSwitch"
+        app:layout_constraintStart_toStartOf="@+id/lifeSwitch" />
+
+    <TextView
+        android:id="@+id/degText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/assost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearEntry" />
+
+    <Spinner
+        android:id="@+id/degreeSpinner"
+        android:layout_width="173dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="40dp"
+        android:entries="@array/majors"
+        app:layout_constraintStart_toEndOf="@+id/certsSpinner"
+        app:layout_constraintTop_toTopOf="@+id/certsSpinner" />
+
+    <Spinner
+        android:id="@+id/certsSpinner"
+        android:layout_width="173dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="71dp"
+        android:entries="@array/certs"
+        app:layout_constraintBottom_toBottomOf="@+id/nxtButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifeSwitch" />
+
+    <TextView
+        android:id="@+id/cert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/fm"
+        app:layout_constraintStart_toStartOf="@+id/certsSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/certsSpinner" />
+
+    <TextView
+        android:id="@+id/deg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="46dp"
+        android:text="@string/sm"
+        app:layout_constraintEnd_toEndOf="@+id/degreeSpinner"
+        app:layout_constraintStart_toEndOf="@+id/nxtButton"
+        app:layout_constraintTop_toBottomOf="@+id/degreeSpinner" />
+
+    <Button
+        android:id="@+id/nxtButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

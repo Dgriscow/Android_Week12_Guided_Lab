@@ -2,7 +2,6 @@
     <string name="app_name">Android_Week12_Guided_Lab</string>
 
 
-
     <string name="loginText">Login</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
@@ -11,4 +10,54 @@
     <!--Error Messages-->
     <string name="errMessageLogin">Error Logging in, Please try again</string>
     <string name="errPass">Invalid Password, Please Try Again</string>
+    <!-- ~~~~~~~~ -->
+
+    <string name="fn">First Name</string>
+    <string name="ln">Last Name</string>
+
+    <string name="phone">Phone Number</string>
+
+    <string name="dob">Date Of Birth</string>
+
+
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+
+    <string name="assost">Degrees</string>
+
+    <string name="cert">Certificate</string>
+
+    <string name="fm">Certifications</string>
+
+    <string name="sm">Degrees</string>
+
+    <string-array name="majors">
+        <item>Math</item>
+        <item>Science</item>
+        <item>Engineering</item>
+    </string-array>
+
+    <string-array name="certs">
+        <item>Digital Media</item>
+        <item>Android</item>
+        <item>IOS</item>
+        <item>Python</item>
+    </string-array>
+
+
 </resources>
